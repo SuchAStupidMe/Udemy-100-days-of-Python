@@ -26,7 +26,7 @@ def game():
         another_card = input('Do you want ot take another card?: ').lower()
         if another_card == "y":
             player_hand.append(random.choice(cards))
-            print(f"Your cards are {player_hand} with score of {sum(player_hand)}")
+            print(f"You take another card {player_hand} and get score of {sum(player_hand)}")
             if calculate_score(player_hand) > 21:
                 if 11 in player_hand:
                     player_hand[player_hand.index(11)] = 1
